@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  border: none;
+}
+
+/* color clases */
+.text-white {
+  color: white;
+}
+
+/* color clases */
+
+.nav-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 1140px; */
+
+  border-bottom: 1px solid #e8e8e8;
+  padding: 5px 117px;
+}
+.nav-1 .nav-child-1 ul {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+}
+.nav-1 .nav-child-2 {
+  display: flex;
+  /* gap: 30px; */
+  font-size: 14px;
+}
+.nav-child-2 .my-wishlist {
+  border-right: 1px solid#d7d4d4;
+  padding: 6px 20px;
+}
+.nav-child-2 .your-order {
+  border-right: 1px solid#d7d4d4;
+  padding: 6px 20px;
+}
+.nav-1-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  font-size: 13px;
+  padding: 9px 0px 9px 20px;
+}
+.nav-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 117px;
+  flex-grow: 1;
+}
+.nav-2 .child-2 {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 130px;
+  width: 100%;
+  flex-grow: 1;
+  /* background: red; */
+}
+.child-2 ul {
+  display: flex;
+  gap: 40px;
+  margin-left: auto;
+}
+.child-2 .nav-2-icons {
+    font-size: 30px;
+}
+/* .nav-2 ul{
+    display: flex;
+    gap: 40px;
+    font-size: 17px;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+ul a{
+    color: black;
+}
+.nav-2 ul a:hover{
+    color: #dc3545;
+} */
