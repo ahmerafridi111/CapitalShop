@@ -12,77 +12,80 @@
 .text-white {
   color: white;
 }
-
 /* color clases */
 
+/* border clases */
+.myborder {
+  border-right: 1px solid#d7d4d4;
+  padding: 6px 20px;
+}
+/* border clases */
 .nav-1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* width: 1140px; */
-
   border-bottom: 1px solid #e8e8e8;
-  padding: 5px 117px;
+  padding: 4px 8.5vw;
 }
-.nav-1 .nav-child-1 ul {
+.nav-1 ul {
   display: flex;
-  gap: 10px;
-  font-size: 14px;
+  gap: 35px;
+  font-size: 13px;
+}
+.nav-1 ul a {
+  color: black;
 }
 .nav-1 .nav-child-2 {
   display: flex;
   /* gap: 30px; */
   font-size: 14px;
 }
-.nav-child-2 .my-wishlist {
-  border-right: 1px solid#d7d4d4;
-  padding: 6px 20px;
-}
-.nav-child-2 .your-order {
-  border-right: 1px solid#d7d4d4;
-  padding: 6px 20px;
-}
+
 .nav-1-icons {
   display: flex;
-  flex-direction: row;
   gap: 15px;
   font-size: 13px;
   padding: 9px 0px 9px 20px;
+  color: rgb(187, 187, 187);
 }
+
 .nav-2 {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 25px 117px;
-  flex-grow: 1;
+  justify-content: space-around;
+  padding: 25px 8vw;
 }
 .nav-2 .child-2 {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
-  gap: 130px;
-  width: 100%;
   flex-grow: 1;
-  /* background: red; */
+  gap: 70px;
 }
 .child-2 ul {
   display: flex;
-  gap: 40px;
+  gap: 52px;
   margin-left: auto;
 }
+.child-2 ul a {
+  color: black;
+  font-weight: 700;
+  font-size: 15px;
+}
 .child-2 .nav-2-icons {
-    font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  gap: 20px;
 }
-/* .nav-2 ul{
-    display: flex;
-    gap: 40px;
-    font-size: 17px;
-    font-weight: 600;
-    transition: all 0.4s;
+/* offer-patti start here */
+.offer-patti-black {
+  background: #000;
+  color: white;
+  padding-block: 14px;
+  width: 100%;
+  text-align: center;
 }
-ul a{
-    color: black;
+.offer-patti-black p a {
+  color: yellow;
 }
-.nav-2 ul a:hover{
-    color: #dc3545;
-} */
+/* offer-patti start here */
