@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Grey+Qo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Grey+Qo&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -54,6 +56,7 @@
   align-items: center;
   justify-content: space-around;
   padding: 25px 8vw;
+  /* position: sticky; */
 }
 .nav-2 .child-2 {
   display: flex;
@@ -85,7 +88,92 @@
   width: 100%;
   text-align: center;
 }
-.offer-patti-black p a {
+.offer-patti-black a {
   color: yellow;
 }
 /* offer-patti start here */
+
+.slider {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://preview.colorlib.com/theme/capitalshop/assets/img/hero/h1_hero1.jpg);
+  display: flex;
+  align-items: center;
+}
+.slider .slider-content {
+  width: 38%;
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  text-align: center;
+}
+.slider-content h3 {
+  color: #ff2020;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "clicker script", cursive;
+}
+.slider-content h1 {
+  font-size: 3.5rem;
+  font-family: Jost;
+  font-weight: 500;
+  line-height: 0.7;
+  margin-bottom: 8px;
+}
+.slider-content p {
+  text-align: center;
+  font-family: Jost;
+  font-size: 19px;
+  color: #74706b;
+}
+.slider-content button {
+  width: fit-content;
+  margin: 0 auto;
+  border: 1px solid;
+  padding: 10px 20px;
+}
+.slider-content button {
+  font-size: 15px;
+  padding: 15px 45px;
+  color: white;
+  background-color: #292621;
+  text-transform: uppercase;
+}
+/* slider end */
+/* cards start */
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 50px 8vw;
+  /* height: 40vh; */
+  background-color: red;
+}
+.cards .card {
+  width: 362px;
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cards .card1 {
+  background-image: url(./card1.webp);
+}
+.cards .card2 {
+  background-image: url(./card2.webp);
+}
+.cards .card3 {
+  background-image: url(./card3.webp);
+}
+.text-center {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding-bottom: 3%;
+  color: white;
+}
+/* cards end */
