@@ -236,15 +236,16 @@ body {
   color: #ff2020;
   border-color: #ff2020;
 }
-.slider-cards {
+.slider-cards,
+.card-products {
   display: flex;
   justify-content: center;
   margin-block: 45px;
   gap: 20px;
   flex-wrap: wrap;
 }
-.slider-cards .card {
-  width: 265px;
+.slider-cards .card,
+.products .card {
   text-align: center;
   position: relative;
 }
@@ -269,12 +270,14 @@ body {
 .hover-icons i:hover {
   background-color: red;
 }
-.slider-cards .card img {
+.slider-cards .card img,
+.products .card img {
   width: 100%;
   height: 300px;
 }
 
-.slider-cards .card .content {
+.slider-cards .card .content,
+.products .card-products .content {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -339,3 +342,54 @@ body {
 }
 
 /* testimonial end*/
+
+/* products start*/
+.products {
+  padding-block: 95px;
+}
+.products h1,
+.news-section h1 {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: jost;
+  text-align: center;
+}
+
+.card span:nth-child(2) {
+  color: gray;
+  margin-left: 10px;
+  text-decoration: line-through;
+}
+/* products end*/
+
+/* news section start*/
+.news-section {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  background: #f6f6f6;
+  padding: 80px 8vw;
+}
+
+.news-section img {
+  width: 362px;
+}
+.news-section .card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 363px;
+  /* background: #000; */
+}
+
+.news-section .card .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 424px;
+}
+.news-section .card-content a{
+  font-size: 25px;
+  font-family: jost;
+}
+/* news section end*/
