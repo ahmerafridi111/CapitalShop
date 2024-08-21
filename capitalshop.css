@@ -6,15 +6,12 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: jost, sans-serif;
   border: none;
   background: transparent;
 }
 p {
   line-height: 1.5;
-}
-body {
-  font-family: jost;
 }
 /* font family clases */
 .font-jost {
@@ -409,7 +406,7 @@ body {
 }
 /* news section end*/
 .offers {
-  padding: 70px 8vw;
+  padding: 50px 8vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -432,10 +429,9 @@ body {
 
 /* news letter start */
 footer {
-  height: 80vh;
-  background-color: #000000;
+  /* height:85vh; */
+  background-color: #0d0f11;
   color: white;
-  font-family: jost;
   padding-inline: 8vw;
 }
 .news-letter {
@@ -443,49 +439,90 @@ footer {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  padding-block: 50px;
-  border-bottom: 1px solid #f0eeec;
+  height: 200px;
+  border-bottom: 1px solid #b4b3b3;
 }
 footer .news-letter .subscribe {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  /* max-width: 300px; */
-  /* flex-grow: 1; */
+  width: 240px;
 }
 
 footer form {
-  flex-grow: 2;
+  width: 580px;
   display: flex;
   gap: 10px;
-  background: orange;
 }
 
 footer form input {
   outline: none;
-  /* flex-grow: 1; */
+  flex-grow: 1;
   background: white;
-  padding: 20px;
+  padding: 20px 10px;
 }
 
 footer form button {
   background: #ff2020;
   color: white;
   padding: 20px 35px;
-  font-family: jost;
   font-weight: 500;
   font-size: 14px;
 }
 
 footer .footer-icons {
-  /* flex-grow: 2; */
   font-size: 24px;
   display: flex;
   justify-content: center;
   gap: 25px;
+  color: gray;
 }
-
+.news-letter .subscribe h3 {
+  font-size: 23px;
+  font-weight: 600;
+}
 .news-letter .subscribe p {
   font-size: 15px;
 }
+
 /* news letter end */
+/* ye wala box start */
+footer .ye-wala-box {
+  display: flex;
+  gap: 100px;
+  /* justify-content: space-between; */
+  padding-block: 60px;
+  border-bottom: 1px solid rgb(230, 224, 224);
+}
+.ye-wala-box .shop-men {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 45px;
+}
+.shop-men h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.shop-men ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.shop-men ul li a {
+  color: #bbb9b5;
+}
+/* ye wala box end */
+/* copy right start */
+footer .copy-right {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.copy-right p {
+  font-size: 16px;
+  color: #bbb9b5;
+}
+.copy-right span {
+  color: #ff2020;
+}
+/* copy right end */
