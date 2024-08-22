@@ -13,16 +13,20 @@
 p {
   line-height: 1.5;
 }
-/* font family clases */
-.font-jost {
-  font-family: jost;
-}
-/* font family clases */
 /* align classes */
 .text-center {
   text-align: center;
 }
 /* align classes */
+
+/* font weight classess */
+.font-weight {
+  font-weight: 500;
+}
+/* font weight classess */
+/* font size class */
+
+/* font size class */
 
 /* color clases */
 .text-white {
@@ -36,6 +40,8 @@ p {
   padding: 6px 20px;
 }
 /* border clases */
+
+/* nav start herer */
 .nav-1 {
   display: flex;
   align-items: center;
@@ -100,10 +106,8 @@ p {
 /* offer-patti start here */
 .offer-patti-black {
   background: #000;
-  color: white;
   padding-block: 14px;
   width: 100%;
-  text-align: center;
 }
 .offer-patti-black a {
   color: yellow;
@@ -125,24 +129,19 @@ p {
   display: flex;
   flex-direction: column;
   gap: 17px;
-  text-align: center;
 }
 .slider-content h3 {
   color: #ff2020;
   font-size: 3rem;
   font-weight: 400;
-  font-family: "clicker script", cursive;
+  font-family: "clicker script";
 }
 .slider-content h1 {
   font-size: 3.5rem;
-  font-family: Jost;
-  font-weight: 500;
   line-height: 0.7;
   margin-bottom: 8px;
 }
 .slider-content p {
-  text-align: center;
-  font-family: Jost;
   font-size: 19px;
   color: #74706b;
 }
@@ -155,7 +154,6 @@ p {
 .slider-content button {
   font-size: 15px;
   padding: 15px 45px;
-  color: white;
   background-color: #292621;
   text-transform: uppercase;
 }
@@ -195,14 +193,11 @@ p {
   bottom: -23px;
   left: 50%;
   transform: translateX(-50%);
-  color: white;
-  text-align: center;
   transition: all 0.6s ease;
 }
 
 .first-cards .card .content h3 {
   font-size: 25px;
-  font-family: jost;
   font-weight: 600;
 }
 .first-cards .card .content a {
@@ -226,13 +221,9 @@ p {
   justify-content: space-between;
   border-bottom: 1px solid #e5e3df;
 }
-.slider-nav h1 {
-  font-weight: 500;
-}
+
 .slider-nav .slider-btns button {
   font-size: 16px;
-  font-family: jost;
-  font-weight: 500;
   padding: 38px 15px;
   border-bottom: 4px solid transparent;
 }
@@ -320,12 +311,9 @@ p {
 }
 .testimonial h2 {
   font-size: 34px;
-  font-weight: 500;
   color: #292621;
-  font-family: jost;
 }
 .testimonial p {
-  text-align: center;
   font-size: 20px;
   line-height: 1.8;
   width: 40%;
@@ -338,7 +326,6 @@ p {
   width: 500px;
 }
 .testimonial-designer p {
-  text-align: start;
   width: 100%;
   font-size: 14px;
 }
@@ -352,9 +339,6 @@ p {
 .products h1,
 .news-section h1 {
   font-size: 30px;
-  font-weight: 500;
-  font-family: jost;
-  text-align: center;
 }
 
 .card span:nth-child(2) {
@@ -388,11 +372,8 @@ p {
 .news-section .card-content a {
   font-size: 23px;
   color: #292621;
-  font-family: jost;
-  font-weight: 500;
 }
 .news-section .card-content P {
-  font-family: jost;
   font-weight: 400;
   color: #74706b;
   line-height: 1.6;
@@ -400,7 +381,6 @@ p {
 .news-section .card > a {
   font-weight: 600;
   font-size: 15px;
-  font-family: jost;
   color: #292621;
   text-decoration: underline;
 }
@@ -410,10 +390,8 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
 }
 .offer-card {
-  text-align: center;
   flex: 1 1 240px;
   display: flex;
   flex-direction: column;
@@ -426,12 +404,17 @@ p {
 .offer-card img {
   margin: auto;
 }
-
+.offer-card h3{
+  font-weight: 500;
+  font-size: 19px;
+}
+.offer-card p{
+  font-size: 15px;
+  color: #57667e;
+}
 /* news letter start */
 footer {
-  /* height:85vh; */
   background-color: #0d0f11;
-  color: white;
   padding-inline: 8vw;
 }
 .news-letter {
@@ -464,9 +447,7 @@ footer form input {
 
 footer form button {
   background: #ff2020;
-  color: white;
   padding: 20px 35px;
-  font-weight: 500;
   font-size: 14px;
 }
 
@@ -484,8 +465,8 @@ footer .footer-icons {
 .news-letter .subscribe p {
   font-size: 15px;
 }
-
 /* news letter end */
+
 /* ye wala box start */
 footer .ye-wala-box {
   display: flex;
@@ -526,3 +507,7 @@ footer .copy-right {
   color: #ff2020;
 }
 /* copy right end */
+
+/* Responsivenes starts here  */
+
+/* Responsivenes end here  */
