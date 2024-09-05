@@ -47,7 +47,9 @@ p {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #e8e8e8;
-  padding-inline: 8.5vw;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
   padding-block: 10px;
 }
 .nav-1 ul {
@@ -72,15 +74,20 @@ p {
 }
 
 .nav-2 {
-  display: flex;
+  position: sticky;
   top: 0;
+  z-index: 10;
+  background: white;
+}
+.nav-2-child{
+  display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 25px 8vw;
-  position: sticky;
-  z-index: 10;
-  background: white;
+  padding-block: 25px;
+  margin: auto;
+  width: 90%;
+  max-width: 1200px;
 }
 .nav-2 .nav-btn {
   font-size: 17px;
@@ -147,7 +154,7 @@ p {
   font-family: "clicker script";
 }
 .slider-content h1 {
-  font-size: clamp(1.75rem, 1.2331rem + 2.5845vw, 3.375rem);
+  font-size: clamp(1.6875rem, 1.1308rem + 2.7833vw, 3.4375rem);
   line-height: 0.7;
   margin-bottom: 8px;
 }
@@ -170,7 +177,7 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-block: 50px;
+  padding: 50px 0px;
   width: 90%;
   max-width: 1200px;
   gap: 20px;
@@ -178,7 +185,6 @@ p {
 }
 .first-cards .card {
   flex: 1 1 250px;
-  max-width: 360px;
   height: 300px;
   position: relative;
   overflow: hidden;
@@ -222,8 +228,9 @@ p {
 }
 /* cards end */
 .slider-card-content {
-  /* margin-top: 35px; */
-  margin: 40px 8vw 130px;
+  margin: 40px auto 130px;
+ width: 90%;
+ max-width: 1200px;
 }
 .slider-nav {
   display: flex;
@@ -251,21 +258,26 @@ p {
 }
 .slider-cards .card {
   position: relative;
+  flex: 1 1 200px;
 }
 .slider-cards .card .hover-icons {
   position: absolute;
-  bottom: 23%;
-  left: 12.3%;
-  /* width: 200px; */
+  bottom: 26%;
+  left: 50%;
+  transform: translateX(-50%);
   background: #fefdfd;
   color: rgb(0, 0, 0);
   opacity: 0;
   transition: 0.6s;
+  width: 80%;
+  display: flex;
+  
 }
 
 .hover-icons i {
+  flex-grow: 1;
   font-size: 22px;
-  padding: 12px 20px;
+  padding: 10px  ;
 }
 .slider-cards .card:hover .hover-icons {
   opacity: 1;
@@ -288,37 +300,25 @@ p {
 }
 /* testimonial start */
 .testimonial {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
   background: #f3ead8;
-  padding-block: 100px;
+  height: 430px;
   position: relative;
 }
-.aero-1 i {
+.testimonial button{
+  cursor: pointer;
   font-size: 25px;
-  cursor: pointer;
   color: #74706b;
-}
-.testimonial .aero-1 {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.testimonial button:first-child{
   left: 20%;
-  top: 50%;
-  transform: translateY(-50%);
 }
-.aero-2 i {
-  font-size: 30px;
-  cursor: pointer;
-  color: #74706b;
-}
-.testimonial .aero-2 {
-  position: absolute;
+.testimonial button:last-child{
   right: 20%;
-  top: 50%;
-  transform: translateY(-50%);
 }
+
 .testimonial h2 {
   font-size: 34px;
   color: #292621;
@@ -326,7 +326,15 @@ p {
 .testimonial p {
   font-size: 20px;
   line-height: 1.8;
-  width: 40%;
+}
+.testimonial-content{
+  width: 90%;
+  max-width: 550px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
 }
 .testimonial .testimonial-designer {
   display: flex;
@@ -532,7 +540,16 @@ footer .copy-right {
   .slider .slider-content {
     margin: auto;
   }
-}
+  .slider-content p{
+    font-size: 16px;
+  }
+  .slider-nav h1 {
+ font-size: 6vw;
+  }
+  .slider-nav .slider-btns button{
+    padding: 38px 10px;
+  }
+
 @media (max-width: 767px) {
   .nav-1 ul {
     display: none;
@@ -546,6 +563,9 @@ footer .copy-right {
   .slider-content button {
     padding: 10px 30px;
   }
+  .slider-nav {
+    flex-direction: column;
+  }
 }
 @media (max-width: 991px) {
   .nav-1 {
@@ -555,7 +575,8 @@ footer .copy-right {
     justify-content: space-between;
   }
   .nav-2 .child-2 {
-    width: 100%;
+    width: 90%;
+    max-width: 1200px;
     flex-direction: column;
     align-items: start;
     margin-top: 10px;
@@ -589,6 +610,19 @@ footer .copy-right {
   .nav-2 .child-2.active {
     height: 320px;
   }
+  .first-cards .card{
+    max-width: 350px;
+  }
+  .slider-cards .card img,
+.products .card img {
+  height: 230px;
+}
+.slider-cards .card .hover-icons {
+  bottom: 30%;
+}
+.slider-cards .card{
+  max-width: 300px;
+}
 }
 @media (max-width: 1200px) {
   .nav-2 .child-2 {
