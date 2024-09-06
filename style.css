@@ -549,7 +549,7 @@ footer .copy-right {
   .slider-nav .slider-btns button{
     padding: 38px 10px;
   }
-
+}
 @media (max-width: 767px) {
   .nav-1 ul {
     display: none;
